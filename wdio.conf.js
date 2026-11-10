@@ -9,7 +9,7 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-        maxInstances: 10,
+        maxInstances: 1,
    
     capabilities: [{
         platformName: 'Android',
@@ -94,7 +94,15 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [
+        'spec',
+        ['allure', {
+            outputDir: './reports/allure-results',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+            useCucumberStepReporter: false
+        }]
+    ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

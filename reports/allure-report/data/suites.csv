@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9360","Negative test, should not login with locked user","Swag Labs App Tugas Nopiyanti","2026-11-10","passed","2026-11-10","","","",""
+"","13198","Verify homepage, scroll down/up, filter and logout","Home Page Tugas Nopiyanti","2026-11-10","passed","2026-11-10","","","",""
+"","6157","should login successfully with standard user","Swag Labs App Tugas Nopiyanti","2026-11-10","passed","2026-11-10","","","",""
